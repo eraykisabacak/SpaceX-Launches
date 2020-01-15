@@ -14,6 +14,7 @@ import {
 import {
     Container
 } from 'semantic-ui-react';
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
                 <Route path="/past" component={Past} exact />
             </div>
         </Router>
+        <Footer/>
     </div>
   );
 }
