@@ -1,6 +1,14 @@
 import React from "react";
 import Countdown from "./CountDown";
 import { Grid,Table } from 'semantic-ui-react'
+import { BounceLoader } from "react-spinners";
+import { css } from "@emotion/core";
+
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+`;
 
 export default class Next extends React.Component {
     state = {
@@ -21,24 +29,21 @@ export default class Next extends React.Component {
     render() {
         //const currentDate = new Date();
         if (this.state.loading) {
-            return <div>loading...</div>;
+            //return <div>loading...</div>;
+            return (<div className="sweet-loading">
+                <BounceLoader
+                    css={override}
+                    size={80}
+                    color={"#123abc"}
+                    loading={this.state.loading}
+                />
+            </div>)
         }
 
         if (!this.state.todos) {
             return <div>didn't get a person</div>;
         }
-        console.log(this.state.todos.launch_date_local);
         return (
-            /*<div>
-                <div>Next</div>
-                <div>{this.state.todos.flight_number}</div>
-                <div>{this.state.todos.mission_name}</div>
-                <div>{this.state.todos.rocket.rocket_name}</div>
-                <div>{this.state.todos.launch_site.site_name}</div>
-                <div>{this.state.todos.launch_date_local}</div>
-                <div>{typeof this.state.todos.launch_date_local}</div>
-                <Countdown date={this.state.todos.launch_date_local} />
-            </div>*/
             <Grid>
                 <Grid.Row>
 
