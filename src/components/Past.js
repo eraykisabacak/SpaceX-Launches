@@ -43,14 +43,6 @@ export default class Past extends React.Component {
         }
 
         return (
-            /*<div>
-                <div>PAST</div>
-                <div>{this.state.todos.flight_number}</div>
-                <div>{this.state.todos.mission_name}</div>
-                <div>{this.state.todos.rocket.rocket_name}</div>
-                <div>{this.state.todos.launch_site.site_name}</div>
-                <div>{this.state.todos.launch_date_local}</div>
-            </div>*/
             <Grid>
                 <Grid.Row>
 
