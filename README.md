@@ -2,7 +2,7 @@
 SpaceX Launches - Next Launch - Latest Launch
 
 Projede React, React-Spinner, Semantic-UI-React kullanılmıştır.
-Projenin Surger sh sitesinden canlı olarak görüntülenebilir.
+Projenin Surger sh sitesinden canlı olarak görüntülenebilir. Heroku ile yapmaya çalıştım fakat sorunlar ile karşılaştım.
 
 SpaceX API tarafından bilgi alınıyor.
 
